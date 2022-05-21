@@ -1,0 +1,89 @@
+HTML & CSS Introduction
+
+HTML - език с който описваме уеб съдържанието на страница, използваме тагове за да дефинираме елементите 
+чрез които можем да създадем нашата страница
+<p></p> - таг параграф,
+Някои елементи имат отварящ и затварящ таг, а някои само се извикват;
+Изисквания винаги нашият файл трябва да започва с  <!DOCTYPE html> declaration, това не е таг
+DOCTYPE реално дава информация на браузъра за какъв тип документ да очаква, или тоест на
+коя е версията на HTML на която е написана страницата.
+<meta/> - Мета таговете са части от информация, които използвате, за да кажете на търсачките и тези, 
+които разглеждат вашия сайт повече за вашата страница и информацията, която съдържа. Мета таговете включват: 
+Заглавие тагове: заглавието на вашата страница, което трябва да е уникално за всяка страница, която публикувате.
+<b></b> bold tag, тук просто имаме текс който е болднат
+<strong></strong> болд шрифта, визуално има същият резултат като <b> но реално дава информация, 
+че някоя дума или елемент е важен за страницата
+ALT SHIFT F - shourt cut за форматиране на кода.
+
+Емет дава опцията да попълва така нареченият бойлер плейт - 
+Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
+ < documentation = https://docs.emmet.io/abbreviations/syntax/>
+ul>li.red*6 ако го напишем в VSC:
+
+<ul>
+	<li class="red"></li>
+	<li class="red"></li>
+	<li class="red"></li>
+	<li class="red"></li>
+	<li class="red"></li>
+	<li class="red"></li>
+</ul>
+
+<h1></h1> - най-голямото заглавие на страницата, заглавието на нашият сайт;
+от <h1 - h6 има тагове за заглавие;
+<p></p> параграф;
+<br/> break оставя празно място между параграфите;
+<a href = ""></a> link хипер линкове или линкове, отварящ и затварящ таг, на къде води линка се подава
+в атрибута href ="",
+Local links - референция към елемент на нашата страница, можем да имаме линкове които да сочат като 
+елементи на нашата страница, encure links
+
+<h1 id="exercises">Exercises</h1>
+<a href="#exercises" target ="_blank">Exercises</a> като на атрибута href, сложим #name_id, по този начин
+можем да сочим към места в нашата страница;
+
+By default, the linked page will be displayed in the current browser window. 
+To change this, you must specify another target for the link.
+The target attribute specifies where to open the linked document.
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+
+<img/> единичен таг, който много често се използва, има много атрибути,
+има два задължителни атрибута, src и alt
+<img src="url" alt="alternatetext"> 
+Задължителният атрибут src определя пътя (URL) към изображението.
+
+Забележка: Когато уеб страница се зареди, в този момент браузърът е този, 
+който получава изображението от уеб сървър и го вмъква в страницата. 
+Ето защо, уверете се, че изображението действително остава на същото място по отношение на уеб страницата,
+в противен случай вашите посетители ще получат счупена икона за връзка. 
+Иконата на счупена връзка и алтернативният текст се показват, ако браузърът не може да намери изображението.
+<ol></ol> ordered list, имаме тагаве, които изистват използването на определени тагове в него;
+ol - очаква че в него ще има <li></li> list item, 
+ol taga има следните атрибути - 
+- reversed - дава номерацията на list items на обратно, вместо да 1 ,2, 3, ще е 3, 2, 1
+- start- атрибут, с който можем да посочваме началната стойност на list items, <ol start="50"></ol>,
+означава, че изброяването ще започне от 50, а не от 1, както е по дефалт
+-type- <ol type="1|a|A|i|I"> с този атрубут, можем да задаваме типа на изброяващата стойност, дали 
+да е число, букви изброени по азбучен ред или числата от римската бройна система
+Value	Description
+1	Default. Decimal numbers (1, 2, 3, 4)
+a	Alphabetically ordered list, lowercase (a, b, c, d)
+A	Alphabetically ordered list, uppercase (A, B, C, D)
+i	Roman numbers, lowercase (i, ii, iii, iv)
+I	Roman numbers, uppercase (I, II, III, IV)
+
+<ul></ul> неподреден списък, изброява по дефолт с булет знак
+The <ul> tag defines an unordered (bulleted) list.
+
+Use the <ul> tag together with the <li> tag to create unordered lists.
+type atribute може да е disc, circle, square, none, 
+
+Description lists using <dl>
+The <dl> tag defines a description list.
+The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).
