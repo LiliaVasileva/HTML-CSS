@@ -87,3 +87,12 @@ type atribute може да е disc, circle, square, none,
 Description lists using <dl>
 The <dl> tag defines a description list.
 The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).
+CTRL + SPACE - ни дава всички файлове в нашата директория 
+./ - ни дава текущата директория
+title като атрибут ни дава името на линка като атрибут на таговете; примерно 
+<a title="bear link" href="some_link"></a> по този начин ако поставим мишката на линка на нашата страница
+ще ни изпише title, който сме въвели;
+анкер линкове, работят с атрибути id :
+<h2 id="picture-section">Picture of a bear</h2>
+как можем да отидем до нея, ако създадем линк, който да води към bear picture
+<a href="#picture-section">Bear picture</a>, това ще ни даде линк към нещо което се намира на нашата страница,
