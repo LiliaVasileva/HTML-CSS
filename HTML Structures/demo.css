@@ -1,0 +1,24 @@
+header{
+    background-color: lightcoral;
+}
+
+main {
+    background-color: lightblue;
+}
+
+section{
+    background-color: lightgreen;
+}
+
+footer{
+    background-color: blue;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+  }
+  table{
+      background-color: white;
+      border: solid;
+      padding: 7px;
+  }

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+p.ar{
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 30px;
+}
+p.tim{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    /* font-style: inherit;
+    font-weight: bolder; */
+}
+h1{
+    font-family: "Source Code Pro";
+}
