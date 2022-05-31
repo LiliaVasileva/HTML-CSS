@@ -16,3 +16,30 @@ p.tim{
 h1{
     font-family: "Source Code Pro";
 }
+section{
+    font-size: 18px;
+    text-shadow: 2px 4px 25px blue;
+}
+
+#p1{
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+}
+#p2{
+    font-size: 1.8rem;
+
+}
+#p3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: antiquewhite;
+
+}
+#p22{
+    font-size: 1.8rem;
+    text-shadow: 2px 4px 25px blue;
+}

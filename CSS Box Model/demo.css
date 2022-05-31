@@ -1,0 +1,15 @@
+div{
+    background-color: lightgreen;
+    /* width: 50%; */
+}
+article{
+    background-color: lightcoral;
+    width: 80%;
+    height: 300px;
+    border: 2px solid lightslategray;
+
+
+}
+article h2 {
+    border: 2px solid lightblue;
+}
