@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url("DancingScript-VariableFont_wght.ttf");
+}
+body {
+    text-align: center;
+    font-size: 12px;
+    background-color: #fafafa;
+
+}
+h1{
+    font-family: "Dancing Script";
+    height: 100px;
+    cursor: pointer;
+    /* color: #4f5e01; */
+    /* background-color: #931a54; */
+    background-color: #4f5e01;
+    font-size: 36px;
+    position: relative;
+    text-align: left;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+#p1{
+    color: red;
+    font-size: 1.2rem;
+
+}
+#p2{
+    font-size: 1.2rem;
+    color: green;
+}
+#p3{
+    font-size: 1.2rem;
+    color: rgb(121, 76, 18);
+}
+i {
+    color: red;
+}
+img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    margin: 12px;
+    border-radius: 10px;
+}

@@ -95,4 +95,208 @@ title като атрибут ни дава името на линка като 
 анкер линкове, работят с атрибути id :
 <h2 id="picture-section">Picture of a bear</h2>
 как можем да отидем до нея, ако създадем линк, който да води към bear picture
-<a href="#picture-section">Bear picture</a>, това ще ни даде линк към нещо което се намира на нашата страница,
+<a href="#picture-section">Bear picture</a>, това ще ни даде линк към нещо което се намира на нашата страница
+
+CSS - Cascading Style Sheets
+чрез него се стилизират страницата, пишат се във файлове .css
+
+h1{
+font-size: 42px,
+color: yellow
+}
+h1 - се нарича селектор, в скобите определяме как и с какво да го стилизираме, нашите декларации, наричат се 
+пропартита с техните стойности - font-size
+
+за да може да работи даден html with css, в head - taga, трябва да го свържем с линк към css файла
+<link rel="stylesheet" type="text/css" href="styles.css"> задаваме му файл в нашият проект
+имаме три начина по които можем да селектираме дадени елементи, за които да им задаваме стил,
+можем да ги селектираме по елемента (h1 {color: blue}, можем да използваме класове <p class = "odd">
+.odd {font-size: 10pt}
+можем да селектираме по id на елемента:
+<span id="login">  #login{width: 150 px}
+може да селектираме елемента, по определен клас
+< a class = "login">Login</a>  a.login {width: 80 px}
+
+когато пишем css, първо селектираме тага, после с празно място влизаме в съдържащите елементи на тага примерно:
+ <article> <h1>Test </h1> </article>
+
+CSS 
+article h1{
+style here
+}
+Block and Inline Elements - блокове елементи;
+<div> and <p> са блокови елементи
+display: block, нашият елемент
+
+
+Examples of block-level elements:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+Свойството display е най-важното свойство на CSS за контролиране на оформлението.
+Свойството display определя дали/как се показва даден елемент.
+Всеки HTML елемент има стойност за показване по подразбиране в зависимост от това какъв тип елемент е. 
+Стойността на показване по подразбиране за повечето елементи е блокова или вградена.
+Елемент на ниво блок винаги започва от нов ред и заема цялата налична ширина (разтяга се наляво и надясно, доколкото може).
+
+
+Вграденият елемент не започва на нов ред и заема само толкова ширина, колкото е необходима.
+Примери за вградени елементи:
+<span>
+<a>
+<img>
+
+Какво е специфичност?
+Ако има две или повече CSS правила, които сочат към един и същ елемент, селекторът с най-висока стойност на специфичност ще „спечели“ и неговата декларация за стил ще бъде приложена към този HTML елемент.
+
+Мислете за спецификата като резултат/ранг, който определя коя стилова декларация в крайна сметка се прилага към елемент.
+
+Семантичен HTML 
+гоогле индексирани, означава семантичните структури на сайта да са добре структурирани и да могат да се анализират
+от ботове или алгоритми, кролари, с чиято помощ се индексират съдържанието на станицата, за да излиза напред при търсене;
+Семантични тагове:
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+
+<Forms - интеракция с потребителя, форм таг, който вътре в себе си очаква и приема
+множество input полетащ
+method = 'POST'  или GET, когато изпращаме информацията,
+action = линк към страницата в която искаме да подадем формата
+<input> type ="text", type="number", type="password", да не виждаме текста, който пишем
+type="email", очаква валиден мейл, type="search"
+type="checkbox", type="radio",type="range",type="submit", type="button", type="file"
+
+
+ <label for="firstname">First name</label>
+            <input type="text" id="firstname">
+чрез for label, се задава за който точно елемент се създава инпут полето, ако на input му дадем дадено id,
+с това id реферираме и свързваме label and input tag
+разликата между value and placeholeder,  с placeholeder даваме директен пример информация какво да задам,
+а value даваме стойността на input полето
+
+ <label for="firstname">First name</label>
+            <input type="text" id="firstname" value="John">
+
+ <label for="firstname">First name</label>
+            <input type="text" id="firstname" placeholder = "Please fill in First name">
+
+
+<fieldset> когато искаме да групираме няколко елемента заедно;
+<legend> difines a caption for the <fieldset> tag
+<select> създава drop-down менюта
+
+Tables
+<table>
+<tr> - row, ред
+<td> - cell, колона
+
+
+Топография - това е начин на стилизиране на текста на страницата ни;
+-User-Friendly Headers
+-White Space - пространство между думите и текста ни
+- good margins to avoid walls of text, в css можем да задаваме по няколко начина
+пространство между нашите елементи;
+-Лесен за навигиране;
+- Да сме консистентни в нашите
+Font Files - допълнителни шрифтове
+- OpenType(.OTF)
+- TrueType (.TTF)
+- Web Open Font Format (.WOFF)
+-Web Open Font Format 2 (.WOOF2)
+
+CSS properties - как се форматира текст;
+CSS font
+fonr-family/ font-face(e.g. sans-serif, Arial)
+forn-size/line-height (e.g. 18 px)
+font-weight (e.g. bold)
+font-style (e.g. italic)
+font-variant(e.g. SmallCaps)
+всички тези пропартита на css са за шрифтове
+когато имаме име на шрифт, когато е само една дума, не е задължително да добавяме кавички
+p.ar{
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+}
+p.tim{
+    font-family: 'Times New Roman';
+}
+
+Ако искам да регистрирам нов шрифт, първо си го изтеглям и разархивирам папката,
+след това го регистрирам в CSS. файла ми с 
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+като font-family - което задавам е името на шрифта, който ще ползвам за стилизиране на различните ми тагове
+Пример:
+p.ar{
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 30px;
+}
+Другият вариант е да копираме линковете в хтмл и после да приложим рефернцията в css;
+
+Generic Name
+<generic-name> a broad class of similar fonts used in a prioritized list of fonts
+- serif - all characters have  stroke endings, всички символи имат заострени крайща
+- sans-serif - no character has stroke endings, обикновенно това е най приятният шрифт за четене
+- monospace - all characters have the same width
+-cursive- handwritten fonts;
+- fanrasy - decorative fonts;
+
+Font-Size:
+px - pixel
+pt - points, предимно за принтиране;не се работи с тази единица особено в web development, за принтиране на определени неща
+em vs rem 
+
+rem - се базира върху отношение, базисният размер на rem e 16 px
+font-size : 1.5 rem == 24 px
+em - пропорционална стойност на елементите, които я заобикалят
+скаларни стойности
+
+font-weight - колко е дебел шрифта
+
+text-aligh - left, right, center, justify - нашият текст се разпростира върху целият ред, от край до край
+line-height - дефинира височината на реда в който пишем текст
+
+lether-spacing - пространството между нашите букви;
+text-decoration = как да декорираме текста ни, има опции за overline, underline, line-through, none,
+се използва основно за промяна на дефолтната стилизация, примерно на линк тага, винаги текста е подчертан,
+със css text-decoration: none; премахваме дефолтната линия отдолу
+text-indent - новият параграф започва по навътре в текста;
+text-overflow - може да е clip, ellipsis, но има нужда от overflow and white-space атрибутите;
+white-space - дефинира как пространството между думите ни работи,  има атрибути като wrap, nowrap, 
+overflow: hidden  да не излиза от нашият елемент
+text-transform: capitalize, uppercase, lowercase
+text-shadow: можем да добавяме сянка на нашият текст 
+p{
+text-shadow: 2px 4px 10 px red;
+}  първата стойност 2px - хоризонтално колко да се измести сянката,всяка положителна стойност
+означава че вървим на дясно, 2пж от центъра на дясно, ако е 0 е центрирано, ако е -2px ще е от центъра на ляво
+втората стойност 4px - е по вертикала ако е положителен вървим на долу, ако е отрицателен вървим нагоре,
+трета е блъра, колко да прозира, ако е по голяма стойността сянката се разпростира много, колкото по малка е толкова повече се
+прибира сянката, последната стойност е цвета;
+Цветове на текста:
+можем да използваме готови цветове - има +140 предифинрани готови цветове;
+- можем да използваме и така наречените хекс цветове, дефинираме цветове които предимно имат 6 стойности, понякога
+можем да видим и само с 3 стойности - #05ffb0
+- RGB - цветове - първи параметър 

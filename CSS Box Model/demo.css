@@ -3,13 +3,28 @@ div{
     /* width: 50%; */
 }
 article{
+    display: inline-block;
     background-color: lightcoral;
     width: 80%;
-    height: 300px;
     border: 2px solid lightslategray;
-
+    margin: 16px;
+    min-width: 200px;
+    max-width: 200px;
+    box-sizing: border-box;
 
 }
 article h2 {
-    border: 2px solid lightblue;
+    padding: 16px;
+    margin: 16px 16px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    background-color:  #4f5e01;
+    border-radius: 8px;
+    color: white;
+}
+article p{
+    margin: 12px;
+    text-align: left;
 }
