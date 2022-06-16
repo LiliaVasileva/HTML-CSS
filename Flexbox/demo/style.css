@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* align-items: stretch;  дефолтна стойност*/ 
+}
+.container .element:nth-child(1){
+    background-color: blueviolet;
+    margin-left: 15px;
+    align-self: flex-end;
+    margin-bottom: 50px;
+
+}
+
+.container .element{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    /* width: 30%; */
+}
+
+.container .element:nth-child(2){
+    background-color: rgb(43, 168, 226);
+    width: 300px;
+    height: 400px;
+    margin-left: 200px;
+    align-self: flex-end;
+    margin-left: 0;
+    margin-bottom: 100px;
+}
+

@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    background-color: #eee;
+    padding: 5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+header, main, aside, footer{
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    color: #000;
+    border: 2px solid black;
+    text-transform: uppercase;
+    
+}
+
+header, footer{
+    flex-basis: 100%;
+}
+main, aside{
+    padding-bottom: 10rem;
+    margin: 1rem 0;
+}
+
+main{
+    flex: 3 1 0;
+    margin-right: 1rem;
+}
+aside{
+    flex: 1 1 0;
+}

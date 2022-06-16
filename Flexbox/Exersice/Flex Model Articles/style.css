@@ -1,0 +1,29 @@
+
+
+h2 {
+    font-family: "Georgia", serif;
+    line-height: 1.2;
+}
+
+p {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 70vw;
+    margin: 10vh auto;
+    max-width: 70vw;
+}
+
+article {
+    min-width: 200px;
+    max-width: 25%;
+    flex: 0 1 auto;
+    padding: 0.5rem;
+}
