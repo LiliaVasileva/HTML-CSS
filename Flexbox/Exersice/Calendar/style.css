@@ -1,0 +1,49 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 65vw;
+    text-align: center;
+    padding: 10px;
+
+}
+
+span{
+    border: 1px solid black;
+}
+
+.container .week {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .week span {
+    width: 20%;
+}
+
+.container .week span:nth-child(1), .container .week span:nth-child(7) {
+    width: 100%;
+    background-color: aqua;
+}
+
+.container .week span:nth-child(8), .container .week span:nth-child(9) {
+    width: 50%;
+    background-color: lightcyan;
+    padding: 0;
+}
+
+.container .notes{
+    display: flex;
+    flex-direction: column;
+}
+.container .notes span{
+    flex-grow: 1;
+}
