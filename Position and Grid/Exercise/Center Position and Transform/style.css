@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.card {
+    width: 30vw;
+    height: 80vh;
+    margin: 10vh auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card .media img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card .info {
+    width: 100%;
+    color: black;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 10%;
+    text-align: left;
+
+}
+
+.card .info a {
+    background: rgb(0, 153, 0);
+    float: right;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+
+}
+
+h3{
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+
+}
+
+p{
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
