@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Joan&display=swap');
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Joan", serif;
+}
+
+:root {
+    --clr-purpule: #C0C2ff;
+    --clr-purpule-light: #EFE5FF;
+    --clr-black: #191919;
+    --clr-white: #FFFFFF;
+    --clr-grey-text: #78727f;
+    --clr-grey-bg: #f5f6f8;
+    --gradient-grey: linear-gradient(90deg, rgba(102, 102, 102, 1) 0%, rgba(102, 102, 102, 0) 100%)
+}
+
+/* COMPONENETS */
+
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--clr-black);
+    background-color: var(--clr-white);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn--dark {
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+}
+
+.section {
+    padding: 96px 4rem;
+}
+
+.section-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/* HOME */
+
+
+#home {
+    padding: 96px 4rem;
+    background-image: linear-gradient(to right top, #c0c2ff, #cecaff, #dbd3fe, #e6dcff, #efe5ff);
+}
+
+
+#home .home-container {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#home .title{
+    font-size: 72px;
+    width: 80%;
+    text-align: center;
+    line-height: 1.1;
+    max-width: 730px;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+}
+
+#home .desc {
+    font-size: 21px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 80%;
+    text-align: center;
+    max-width: 730px;
+}
+
+#home .buttons-container {
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#home .hero-img {
+    width: 100%;
+    margin-bottom: 2rem
+}
+
+#home .comment {
+    color: var(--clr-grey-text);
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+}
+
+#home .partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* FEATURES */
+
+#features .features__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+#features .benefit{
+    position: relative;
+}
+
+#features .benefit::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    background-color: var(--clr-purpule);
+    opacity: 0.8;
+}
+
+#features .benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.benefits .benefit *:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+
+#features .benefit .benefit__img {
+    width: 30%;
+}
+
+/* CATALOG */
+
+#catalog .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#catalog .info {
+    width: 40%;
+}
+
+#catalog .catalog__img {
+    width: 380px;
+    width: 45%;
+
+}
+
+#catalog .info__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#catalog .info__text {
+    color: var(--clr-grey-text);
+    margin-bottom: 1.25rem;
+}
+
+#catalog .info__link {
+    color: var(--clr-black)
+}
+
+/* Testimonials */
+
+#tstm .tstm__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+#tstm .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+#tstm .card {
+    background-color: var(--clr-grey-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+#tstm .card .card_msg{
+    font-style: italic; 
+    margin-bottom: 0.5rem; 
+}
+
+#tstm .card .card__msg_divider{
+    height: 2px;
+    width: 30%;
+    background: var(--gradient-grey);
+    margin-bottom: 1rem;
+}
+
+#tstm .card .card__about{
+    display: grid;
+    grid-template-areas: 
+    "img name name"
+    "img position position";
+    align-items: center;
+}
+
+#tstm .card .card__about .about__img{
+    grid-area: img;
+
+}
+
+#tstm .card .card__about .about__name{
+    grid-area: name;
+    
+}
+
+#tstm .card .card__about .about__position{
+    grid-area: position;
+}
+
+#tstm .btn{
+    display: block;
+    margin: 0 auto;
+}
+
+
+#tstm .cards::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 65%);
+
+}
