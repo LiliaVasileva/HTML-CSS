@@ -1,0 +1,77 @@
+:root{
+    --clr-dark-black:  #0e0e0e;
+    --clr-dark-grey: #a1a1a1;
+    --cle-light-grey: #f7f7f7;
+    --clr-white: #ffffff;
+    --clr-green: #a4c639; 
+
+
+}
+
+
+body{
+    background-color: var(--cle-light-grey);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin-top: 2rem;
+    background-color: var(--clr-white);
+    height: 100vh;
+}
+
+.container .title{
+    padding-top: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.container .title .services{
+    color: var(--clr-green);
+}
+
+.container .title .secondary-title{
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: var(--clr-dark-grey);
+    font-weight: 500;
+
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 65%;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+
+.articles article {
+    background-color: var(--cle-light-grey);
+
+}
+
+.articles article img{
+    width: 100%;
+}
+
+.articles article h3 {
+    padding: 1.5rem;
+}
+
+.articles article p{
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: var(--clr-dark-grey);
+}
+
+.articles article button{
+    background-color: var(--clr-green);
+    border-radius: 2rem;
+    color: var(--clr-white);
+    border: none;
+    width: 35%;
+    height: 10%;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}

@@ -1,0 +1,66 @@
+/* TODO: Add the responsive styles here */
+
+
+@media screen and (max-width: 600px) {
+    .tm-welcome-section {
+        align-content: center;
+        text-align: center;
+
+    }
+
+    .tm-welcome-section h2 {
+        text-align: center;
+        margin-left: 0;
+
+    }
+
+    .tm-paging-links {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .tm-gallery-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        align-items: center;
+        margin: 0 auto;
+    
+    }
+
+    .tm-gallery {
+        margin-left: 0;
+    }
+
+
+    
+    .tm-cta-section tm-section tm-container-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+
+    .tm-cta-section{
+        width: 100%;
+        margin-left: 1rem;
+        text-align: justify;
+    }
+
+    .tm-description-figure {
+        width: 100%;
+    }
+
+    .tm-description-box{
+        width: 100%;
+    }
+
+    .tm-cta-section .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+}
+
+

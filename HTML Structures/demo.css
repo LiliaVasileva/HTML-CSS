@@ -22,3 +22,11 @@ th, td {
       border: solid;
       padding: 7px;
   }
+
+
+@media screen and (max-width: 768){
+    .selector {
+        max-width: 50%;
+    }
+
+}
