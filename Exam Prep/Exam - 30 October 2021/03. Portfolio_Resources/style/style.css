@@ -1,0 +1,244 @@
+:root {
+    --clr-grey-light: #efefef;
+    --clr-dark: #222222;
+    --clr-dark-sub: #4c4c4c;
+    --clr-white: #fff;
+    --pad-section: 5rem;
+}
+
+body {
+    padding: 2rem;
+    font-family: "Raleway", sans-serif;
+    color: var(--clr-dark);
+}
+
+/* цвета на шрифта го дефинирам още в боди елемета */
+
+#header {
+    display: none;
+}
+
+
+/* общите за всички секции стилизации, като фон, паддинг и маржин */
+/* Utilities  */
+.section {
+    background-color: var(--clr-grey-light);
+    padding: var(--pad-section);
+    margin-bottom: 2rem;
+    height: 75vh;
+}
+
+.section-item--wide{
+    width: 60%;
+}
+
+.section-item--narrow{
+    width: calc(40% -6rem);
+}
+
+.default-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+
+}
+.default-title .accent{
+    font-weight: bold;
+}
+
+.default-desc {
+    font-size: 1.5rem;
+    font-style: italic; 
+}
+
+.divider{
+    background-color: var(--clr-dark);
+}
+
+.divider.divider--vertical{
+    width: 2px;
+    height: 5rem;
+}
+
+.divider.divider.divider--horizontal{
+    width: 5rem;
+    height: 2px;
+}
+/* Hero  */
+
+#hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#hero .info{
+    width: 45%;
+}
+
+#hero .default-desc{
+    margin-bottom: 2rem;
+}
+
+#hero .hero-img{
+    position: absolute;
+    bottom: 0px;
+    right: var(--pad-section);
+    width: 50%;
+}
+
+/* Purpose */
+
+#purpose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#purpose .title-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+#purpose .info{
+    width: 50%;
+}
+#purpose .purpose-img{
+    width: 40%;
+    margin-right: 6rem;
+    margin-left: auto;
+}
+
+#purpose .default-desc{
+    margin-bottom: 2rem;
+}
+
+#purpouse .title-wrapper .default-title{
+    margin-bottom: unset;
+    margin-left: 2rem;
+}
+
+#purpose .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#purpose .socials .social__link{
+    width: 4rem;
+    height: 4rem;
+    color: var(--clr-dark-sub);
+    display: block;
+    font-size: 3rem;
+}
+
+/* Poster */
+
+#poster.section{
+    padding: unset;
+}
+
+#poster .background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Gallery */
+
+#gallery{
+    display: flex;
+    align-items: center;
+}
+
+#gallery img{
+    width: 33.33%;
+}
+
+#gallery img:nth-child(2){
+    transform: scale(1.5);
+}
+
+
+/* contacts */
+
+#contacts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#contacts .contacts-content{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contacts .default-desc{
+    margin-bottom: 2.5rem;
+}
+
+
+#contacts .form{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    "email subject"
+    "msg msg"
+    "btn btn";
+
+}
+
+#contacts .form .email{
+    grid-area: email;
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background-color: var(--clr-grey-light);
+}
+
+#contacts .form .subject{
+    grid-area: subject;
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background-color: var(--clr-grey-light);
+}
+
+#contacts .form .msg{
+    grid-area: msg;
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background-color: var(--clr-grey-light);
+    
+}
+
+#contacts .form .btn{
+    grid-area: btn;
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+    border: 1px solid var(--clr-dark);
+    text-transform: uppercase;
+    padding: 0.5rem;
+    
+}
+
+/* utenim */
+
+#utenim {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#utenim .utenim-img{
+    width: 50%;
+    padding: 4rem;
+}
+
+#utenim .info{
+    width: 45%;
+}

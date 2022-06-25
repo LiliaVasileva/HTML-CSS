@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Joan&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,600&display=swap');
+
+html {
+    font-family: 'Work Sans', sans-serif;;
+}
+:root{
+    --clr-primary: #ffffff;
+    --clr-light-blue: #f4faff;
+    --clr-red: #e63342;
+    --clr-dark-blue: #4c5d94;
+    --clr-light-grey: #ced0d2;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 70vh;
+    margin-left: 5rem;
+}
+
+
+
+.header-nav .nav-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-nav .nav-info img{
+    align-items: flex-start;
+}
+
+.header-nav .nav-info .nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.nav-info .btn{
+    color: var(--clr-red);
+    background-color: var(--clr-primary);
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+ 
+
+
+
+.header-nav .nav li{
+    margin: 1rem;
+    color: var(--clr-dark-blue);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.header-nav .nav .nav__home{
+    color: var(--clr-red);
+
+}
+
+.header-nav .home{
+    padding-left: 8rem;
+    padding-top: 8rem;
+    width: 60%;
+    height: 60%;
+}
+
+.header-nav .home img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.header-nav .home h1 {
+    color: var(--clr-dark-blue);
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.header-nav .home p {
+    color: var(--clr-dark-blue);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.header-nav .home .main-btn {
+    background-color: var(--clr-red);
+    color: var(--clr-primary);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 600;
+}
+
+.header-nav .home .secondary-btn {
+    color: var(--clr-dark-blue);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 600;
+    background-color: var(--clr-primary);
+}
